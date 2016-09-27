@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="day6" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="sGY-az-kL8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Oa-ls-JmX">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Find my location" translatesAutoresizingMaskIntoConstraints="NO" id="fWb-hf-auk">
+                                        <rect key="frame" x="40" y="0.0" width="520" height="80"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itt-8r-Kxx">
+                                        <rect key="frame" x="187" y="15" width="226" height="49"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                        <state key="normal" title="Find my Position">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="findMyPositon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEw-yT-emQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fWb-hf-auk" firstAttribute="top" secondItem="4Oa-ls-JmX" secondAttribute="top" id="05g-zX-ogp"/>
+                                    <constraint firstAttribute="trailing" secondItem="fWb-hf-auk" secondAttribute="trailing" constant="40" id="1ga-ga-8OG"/>
+                                    <constraint firstItem="itt-8r-Kxx" firstAttribute="centerY" secondItem="fWb-hf-auk" secondAttribute="centerY" id="2gd-Se-LXJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="fWb-hf-auk" secondAttribute="bottom" constant="20" id="Eis-Hz-grz"/>
+                                    <constraint firstItem="itt-8r-Kxx" firstAttribute="centerX" secondItem="4Oa-ls-JmX" secondAttribute="centerX" id="Jyi-Sd-CE5"/>
+                                    <constraint firstAttribute="height" constant="100" id="OUk-nh-kFN"/>
+                                    <constraint firstItem="fWb-hf-auk" firstAttribute="leading" secondItem="4Oa-ls-JmX" secondAttribute="leading" constant="40" id="dAe-Ft-flv"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="find my locaiton" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8J-0p-9uA">
+                                <rect key="frame" x="30" y="20" width="540" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="V5c-v5-fQ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Oa-ls-JmX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2U6-G7-Qsf"/>
+                            <constraint firstAttribute="trailing" secondItem="4Oa-ls-JmX" secondAttribute="trailing" id="78f-6W-MrM"/>
+                            <constraint firstItem="q8J-0p-9uA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="ITn-F3-Bj7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Oa-ls-JmX" secondAttribute="bottom" id="KVt-g8-agW"/>
+                            <constraint firstItem="q8J-0p-9uA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="OFa-u6-lcO"/>
+                            <constraint firstAttribute="trailing" secondItem="sGY-az-kL8" secondAttribute="trailing" id="QNL-pX-NXJ"/>
+                            <constraint firstItem="sGY-az-kL8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rki-Dm-e9o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sGY-az-kL8" secondAttribute="bottom" id="a7h-bR-zQd"/>
+                            <constraint firstItem="sGY-az-kL8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="i1V-xO-26P"/>
+                            <constraint firstAttribute="trailing" secondItem="q8J-0p-9uA" secondAttribute="trailing" constant="30" id="rJO-Dj-xt6"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="textLabel" destination="q8J-0p-9uA" id="1AK-mW-rOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Find my location" width="326" height="78"/>
+        <image name="bg" width="375" height="667"/>
+    </resources>
+</document>
